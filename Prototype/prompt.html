@@ -18,7 +18,9 @@
 				</video>
 			</div>
 			<div class="container" style="text-align:center; font-size: 20pt;">
-				<a href="" class="standard-cta-button record blue" style="margin-right:40px;">Record</a>
+				<button type="button" onclick="startRecord()">
+					<a href="" class="standard-cta-button record blue" style="margin-right:40px;">Record</a>
+				</button>
 				<a href="photo.html" class="standard-cta-button white">Submit</a>
 			</div>
 		</div>
@@ -47,13 +49,12 @@
 		     console.log("error!");
 		}
 
-		play.addEventListener("click", function() {
+		function startRecord() {
 			disableButtons(false, true, true);
 			console.log("recording!");
-			console.log(play);
 			$('.blue').switchClass('blue', 'red');
 			$('.record').innerHTML = "Stop";
-		});
+		};
 
 
 		disableButtons(true, true);
