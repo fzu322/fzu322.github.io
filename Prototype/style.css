@@ -114,7 +114,7 @@ a {
 	font-size: 12pt;
 }
 
-a.standard-cta-button {
+.standard-cta-button {
 	padding: 12px 20px;
 	text-transform: uppercase;
 	letter-spacing: 1pt;
@@ -122,22 +122,22 @@ a.standard-cta-button {
 	margin-top: 30px;
 }
 
-a.standard-cta-button:hover {
+.standard-cta-button:hover {
 	text-decoration: none;
 }
 
-a.blue {
+.blue {
 	background-color: #0D3C60;
 	color: #fff;
 }
 
-a.white {
+.white {
 	background-color: #fff;
 	color: #0D3C60;
 	border: 1px solid #0D3C60;
 }
 
-a.red {
+.red {
 	background-color: #D33D3F;
 }
 
