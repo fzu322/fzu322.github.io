@@ -49,6 +49,8 @@
 
 		play.addEventListener("click", function() {
 			disableButtons(false, true, true);
+			console.log("recording!");
+			console.log(play);
 			$('.blue').switchClass('blue', 'red');
 			$('.record').innerHTML = "Stop";
 		});
