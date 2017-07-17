@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- First page for prototype -->
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body >
+		<!-- style="background-image: url('./assets/background.png')" -->
+		<div>
+			<div class="container" style="width: 800px; height: 970px; margin:10% auto;">
+				<h2 style="color:#555;">Q: What makes you feel financially in control?</h2><br>
+				<video autoplay="true" id="videoElement">
+				</video>
+			</div>
+			<div class="container" style="text-align:center; font-size: 20pt;">
+				<a href="" class="standard-cta-button blue" style="margin-right:40px;">Record</a>
+				<a href="photo.html" class="standard-cta-button white">Submit</a>
+			</div>
+		</div>
+		<a href="video.html"></a>
+	</body>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+	<script>
+		var video = document.querySelector('#videoElement');
+
+		navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia;
+ 
+		if (navigator.getUserMedia) {       
+		    navigator.getUserMedia({video: true}, handleVideo, videoError);
+		}
+		 
+		function handleVideo(stream) {
+		    video.src = window.URL.createObjectURL(stream);
+		}
+		 
+		function videoError(e) {
+		    // do something
+
+		}
+
+		$('.blue').click(function() {
+			$('#videoElement').addClass('redBorder');
+			$('.blue').innerHTML = "Stop";
+		});
+
+		$('.redBorder').click(function() {
+			$('.redBorder').innerHTML = 'Record'
+		})
+
+		$('')
+
+
+	</script>
+</html>
+

@@ -1,0 +1,258 @@
+
+
+body {
+	font-family: Optimist, Arial, sans-serif;
+}
+
+
+/**/
+
+
+#nav {
+	background-color: #303e4e;
+    height: 48px;
+    position: relative;
+    left: 0;
+    display: block;
+}
+
+.astra-hero-banner.bg-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.astra-video-section {
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero a {
+	background-image: none;
+	display: block;
+	position: relative;
+	top: 50%;
+    margin: 140px auto 0;
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.play a {
+	background-image: url('./assets/play_button.svg');
+}
+
+.text-xs-left {
+    text-align: right!important;
+}
+
+.gallery {
+	padding: 0 10%;
+}
+
+.gallery img {
+	width: 100%;
+}
+
+.content-card {
+	background-color: #ddd;
+	padding: 50px;
+	/*max-width: 40px;*/
+	background-size: cover;
+	min-height: 300px;
+}
+
+.content-card:hover {
+	/*become color*/
+}
+
+.content-card .row:second-child {
+	padding-top: 0px;
+}
+
+.content-card .row div {
+	min-height: 70px;
+}
+
+.response-card {
+	background-color: #fff;
+	border: 2px solid #eee;
+	padding: 40px;
+}
+
+.user {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	vertical-align: middle;
+}
+
+.user + h6 {
+	display: inline-block;
+	padding-left: 10px;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #474D53;
+}
+
+.button-wrapper {
+	padding-top: 55px;
+}
+
+.cta-form {
+	padding: 25px;
+	font-size: 12pt;
+}
+
+a.standard-cta-button {
+	padding: 12px 20px;
+	text-transform: uppercase;
+	letter-spacing: 1pt;
+	border-radius: 3px;
+	margin-top: 30px;
+}
+
+a.standard-cta-button:hover {
+	text-decoration: none;
+}
+
+a.blue {
+	background-color: #0D3C60;
+	color: #fff;
+}
+
+a.white {
+	background-color: #fff;
+	color: #0D3C60;
+	border: 1px solid #0D3C60;
+}
+
+.footer {
+	position: static;
+	height: auto;
+	padding-bottom: 4rem;
+}
+
+.footer .row {
+	margin-left: 0;
+}
+
+.logo {
+    background-image: url('./assets/footer-logos.png');
+    background-repeat: no-repeat;
+    background-position: 0 -10.6em;
+    width: 115px;
+    height: 3.5em;
+    display: block;
+    overflow: hidden;
+    text-indent: -999em;
+}
+
+
+/*TYPE*/
+
+h1 {
+	font-weight: 500;
+	font-size: 80pt;
+	margin: 3rem auto;
+	color:#fff;
+	padding: 40% 10%;
+	line-height: 1.5;
+}
+
+h1 span {
+	font-weight: 600;
+}
+
+/*This is for title — Catch phrase, title of content*/
+h2 {
+	font-weight: 500;
+	font-size: 30pt;
+	color: #fff;
+}
+
+
+/*This is for description of content – content description */
+h3 {
+	font-weight: 500;
+	font-size: 20pt;
+	margin-top: 0px;
+}
+
+
+/*This is for headers of each section - What others said... Explore more stories*/
+h4 {
+	font-weight: 600;
+	font-size: 15pt;
+}
+
+
+/*This is for Questions/prompts*/
+h5 {
+	font-weight: 500;
+	font-size: 12pt;
+}
+
+
+/*This is for Names/profile*/
+h6 {
+	font-weight: 500;
+	font-size: 10pt;
+}
+
+
+/*This is for general paragaraph - Article paragraph, sample answers to prompts, call to action description, about page...
+*/
+p {
+	font-weight: 300;
+	font-size: 12pt;
+    margin: 0 0 10px;
+}
+
+
+.content-card h3 {
+	color: #fff;
+}
+
+.content-card p {
+	color: #fff;
+}
+
+
+.prototype .response-card h4 {
+	font-size: 20pt;
+	color: #333;
+	text-align: center;
+}
+
+
+#videoElement {
+	width: 800px; height:900px; background-color: #666;
+}
+
+.redBorder {
+	border: 3px solid #D33D3F;
+}
+
+.noBorder {
+	border: none;
+}
+
+
+@media (min-width: 992px) {
+
+.astra-hero-banner {
+    height: 500px;
+}
+
+
+
+}
+
