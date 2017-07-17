@@ -4,6 +4,9 @@ body {
 	font-family: Optimist, Arial, sans-serif;
 }
 
+a {
+	text-decoration: none;
+}
 
 /**/
 
@@ -234,7 +237,7 @@ p {
 
 
 #videoElement {
-	width: 800px; height:900px; background-color: #666;
+	width: 800px; height:1000px; background-color: #666;
 }
 
 .redBorder {
