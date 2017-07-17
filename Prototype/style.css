@@ -8,6 +8,12 @@ a {
 	text-decoration: none;
 }
 
+@font-face {
+	font-family: Optimist;
+	src: url('./assets/font/Optimist_W_Rg.woff');
+}
+
+
 /**/
 
 
