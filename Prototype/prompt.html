@@ -29,11 +29,6 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
 	<script>
 		var video = document.querySelector('#videoElement');
-		var play = document.querySelector('.record');
-
-		function disableButtons(disPlay, disPause) {
-			play.disabled = disPlay;
-		}
 
 		navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia;
  
@@ -49,22 +44,17 @@
 		     console.log("error!");
 		}
 
-		function startRecord() {
-			disableButtons(false, true, true);
-			console.log("recording!");
-			$('.blue').switchClass('blue', 'red');
-			$('.record').innerHTML = "Stop";
-		};
-
-
-		disableButtons(true, true);
-		
-// 		$('.record').on( 'click', function() {
-// 			console.log("recording!");
-// 			$('.record').switchClass('blue', 'red');
-// 			$('.record').innerHTML = "Stop";
-// 			console.log("recording!");
-// 		});
+		$(".record").on( "click", function() {
+			if ($(this).hasClass("blue")) {
+				console.log("recording!");
+				$('.blue').addClass('red').removeClass('blue');
+				$(this).html("Stop");
+			} else {
+				console.log("stop recording!")
+				$('.red').addClass('blue').removeClass('red');
+				$(this).html("Record");
+			}
+		});
 
 
 	</script>
