@@ -237,7 +237,8 @@ p {
 
 
 #videoElement {
-	width: 800px; height:1000px; background-color: #666;
+	width: 800px; height:1000px;
+	
 }
 
 .redBorder {
