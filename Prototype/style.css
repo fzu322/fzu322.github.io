@@ -137,6 +137,11 @@ a.white {
 	border: 1px solid #0D3C60;
 }
 
+a.red {
+	background-color: #D33D3F;
+}
+
+
 .footer {
 	position: static;
 	height: auto;
