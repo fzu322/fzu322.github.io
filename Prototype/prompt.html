@@ -39,13 +39,13 @@
 		}
 		 
 		function videoError(e) {
-		    // do something
-
+		     console.log("error!");
 		}
 
 		$('.record').on( 'click', function() {
 			$('.record').switchClass('blue', 'red');
 			$('.record').innerHTML = "Stop";
+			console.log("recording!");
 		});
 
 
