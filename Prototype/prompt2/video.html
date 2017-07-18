@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- First page for prototype -->
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="../style.css">
+	</head>
+	<body >
+		<div>
+			<div class="container" style="width: 800px; height: 970px; margin:10% auto;">
+				<h2 style="color:#555;">Send a 60 second video to your future self to remind you how far you’ve come.</h2><br>
+				<video autoplay="true" id="videoElement">
+				</video>
+			</div>
+			<div class="container" style="text-align:center; font-size: 20pt;">
+				<button type="button" class="standard-cta-button record blue" style="margin-right:40px;">Record</button>
+				<a href="photo.html" class="standard-cta-button white">Submit</a>
+			</div>
+		</div>
+	</body>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+	<script>
+		var video = document.querySelector('#videoElement');
+
+		navigator.mediaDevices.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia;
+ 
+		if (navigator.getUserMedia) {       
+		    navigator.getUserMedia({video: true}, handleVideo, videoError);
+		}
+		 
+		function handleVideo(stream) {
+		    video.src = window.URL.createObjectURL(stream);
+		}
+		 
+		function videoError(e) {
+		    console.log("error!");
+		}
+
+		$(".record").on( "click", function() {
+			if ($(this).hasClass("blue")) {
+				console.log("recording!");
+				$('.blue').addClass('red').removeClass('blue');
+				$(this).html("Stop");
+			} else {
+				console.log("stop recording!")
+				$('.red').addClass('blue').removeClass('red');
+				$(this).html("Record");
+			}
+		});
+
+
+	</script>
+</html>
+
