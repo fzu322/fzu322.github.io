@@ -2,7 +2,7 @@
 @font-face {
 	font-family: 'Optimist';
 	src: url('./font/Optimist_W_Rg.woff') format('woff')
-	, url('./font/Optimist_W_Rg.ttf') format('trutype');
+	, url('./font/Optimist_Rg.ttf') format('trutype');
 }
 
 body {
