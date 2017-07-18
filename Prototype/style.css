@@ -4,13 +4,13 @@ body {
 	font-family: Optimist, Arial, sans-serif;
 }
 
-a {
-	text-decoration: none;
-}
-
 @font-face {
 	font-family: Optimist;
 	src: url('./assets/font/Optimist_W_Rg.woff');
+}
+
+a, a:visited, a:hover, a:active {
+	text-decoration: none;
 }
 
 
@@ -120,7 +120,8 @@ a {
 	font-size: 12pt;
 }
 
-.standard-cta-button {
+a.standard-cta-button,
+button.standard-cta-button {
 	padding: 12px 20px;
 	text-transform: uppercase;
 	letter-spacing: 1pt;
@@ -128,25 +129,29 @@ a {
 	margin-top: 30px;
 }
 
-.standard-cta-button:hover {
-	text-decoration: none;
+a.standard-cta-button:hover,
+button.standard-cta-button {
+	border: none;
 }
 
-.blue {
+.blue, 
+.blue:visited {
 	background-color: #0D3C60;
 	color: #fff;
 }
 
-.white {
+.white,
+.white:visited {
 	background-color: #fff;
 	color: #0D3C60;
 	border: 1px solid #0D3C60;
 }
 
-.red {
+.red,
+.red:visited {
 	background-color: #D33D3F;
+	color: #fff;
 }
-
 
 .footer {
 	position: static;
@@ -174,15 +179,15 @@ a {
 
 h1 {
 	font-weight: 500;
-	font-size: 80pt;
+	font-size: 70pt;
 	margin: 3rem auto;
 	color:#fff;
-	padding: 40% 10%;
+	padding: 20% 10%;
 	line-height: 1.5;
 }
 
 h1 span {
-	font-weight: 600;
+	font-weight: 800;
 }
 
 /*This is for title — Catch phrase, title of content*/
@@ -198,6 +203,7 @@ h3 {
 	font-weight: 500;
 	font-size: 20pt;
 	margin-top: 0px;
+	color: #aaa;
 }
 
 
@@ -241,23 +247,23 @@ p {
 
 
 .prototype .response-card h4 {
+	padding-left: 30pt;
 	font-size: 20pt;
 	color: #333;
-	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
 }
 
+.prototype .response-card {
+	background-color: #eee;
+}
+
+h3 span {
+	color: #333;
+}
 
 #videoElement {
-	width: 800px; height:800px;
-	
-}
-
-.redBorder {
-	border: 3px solid #D33D3F;
-}
-
-.noBorder {
-	border: none;
+	width: 800px; height:800px; 
 }
 
 
