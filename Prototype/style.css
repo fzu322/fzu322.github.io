@@ -1,14 +1,14 @@
 
+@font-face {
+	font-family: 'Optimist';
+	src: url('./assets/font/Optimist_W_Rg.woff') format('woff')
+	, url('./assets/font/Optimist_W_Rg.ttf') format('trutype');
+}
 
 body {
 	font-family: Optimist, Arial, sans-serif;
 }
 
-@font-face {
-	font-family: Optimist;
-	src: url('./assets/font/Optimist_W_Rg.woff') format('woff'),
-		url('./assets/font/Optimist_W_Rg.ttf') format('trutype');
-}
 
 a, a:visited, a:hover, a:active {
 	text-decoration: none;
