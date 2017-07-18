@@ -39,19 +39,26 @@
 		function videoError(e) {
 		     console.log("error!");
 		}
+	
+		var count = 60;
+		var timer; 
 
 		$(".record").on( "click", function() {
 			if ($(this).hasClass("blue")) {
 				console.log("recording!");
 				$('.blue').addClass('red').removeClass('blue');
 				$(this).html("Stop");
+				timer = setInterval(function (){
+					$("#counter").html(count--); 
+				if (count == 1) clearTimeout(timer);
+				}, 1000);
 			} else {
 				console.log("stop recording!")
 				$('.red').addClass('blue').removeClass('red');
 				$(this).html("Record");
+				clearInterval(timer);
 			}
 		});
-
 
 	</script>
 </html>
