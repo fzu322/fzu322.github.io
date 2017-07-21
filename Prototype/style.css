@@ -265,12 +265,21 @@ p {
 }
 
 
+
+@media (min-width: 1200px) {
+	.container {
+    width: 1024px;
+}
+
 @media (min-width: 992px) {
 
 .astra-hero-banner {
-    height: 500px;
+    height: 700px;
 }
 
+.gallery div {
+	padding: 5% 0;
+}
 
 
 }
