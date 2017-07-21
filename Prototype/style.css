@@ -1,12 +1,35 @@
 
 @font-face {
-	font-family: 'Optimist';
-	src: url('./font/Optimist_W_Rg.woff') format('woff')
-	, url('./font/Optimist_Rg.ttf') format('trutype');
+	font-family: "Optimist", Arial, Helvetica;
+	font-weight: 400;
+	src: url("./assets/font/Optimist_W_Rg.woff") format('woff');
+	src: url('https://www.capitalone.com/assets/enterprise/fonts/Optimist_W_Rg.woff2') format("woff2");
+	src: url('./assets/font/Optimist_W_Rg.ttf') format('trutype');
+	src: url('http://www.capitalone.com/assets/enterprise/fonts/Optimist_W_Rg.eot?#iefix') format('eot');
+}
+
+@font-face {
+	font-family: "Optimist Light", Arial, Helvetica;
+	src: url("./assets/font/Optimist_W_Lt.woff") format('woff');
+	src: url("https://www.capitalone.com/assets/enterprise/fonts/Optimist_W_Lt.woff2") format("woff2");
+	src: url("./assets/font/Optimist_W_Lt.ttf") format('trutype');
+	src: url("http://www.capitalone.com/assets/enterprise/fonts/Optimist_W_Lt.eot?#iefix") format('eot');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Optimist Bold', Arial, Helvetica;
+	src: url('./assets/font/Optimist_W_Bd.woff') format('woff');
+	src: url('https://www.capitalone.com/assets/enterprise/fonts/Optimist_W_Bd.woff2') format("woff2");
+	src: url('./assets/font/Optimist_W_Bd.ttf') format('trutype');
+	src: url('http://www.capitalone.com/assets/enterprise/fonts/Optimist_W_Bd.eot?#iefix') format('eot');
+	font-weight: normal;
+	font-style: normal;
 }
 
 body {
-	font-family: Optimist, Arial, sans-serif;
+	font-family: "Optimist", Helvetica, sans-serif;
 }
 
 
@@ -19,24 +42,18 @@ a, a:visited, a:hover, a:active {
 
 
 #nav {
-	background-color: #303e4e;
+	background-color: #ddd;
     height: 48px;
     position: relative;
     left: 0;
     display: block;
 }
 
-.astra-hero-banner.bg-image {
+.bg-image {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-}
-
-.astra-video-section {
-    height: 450px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    border-radius: 0;
 }
 
 .hero a {
@@ -44,7 +61,7 @@ a, a:visited, a:hover, a:active {
 	display: block;
 	position: relative;
 	top: 50%;
-    margin: 140px auto 0;
+    margin: 250px auto 0;
     height: 100px;
     width: 100px;
     background-repeat: no-repeat;
@@ -67,30 +84,79 @@ a, a:visited, a:hover, a:active {
 	width: 100%;
 }
 
+.gallery div {
+	padding: 5% 10%;
+}
+
 .content-card {
 	background-color: #ddd;
 	padding: 50px;
-	/*max-width: 40px;*/
+	/*width: 49%;*/
 	background-size: cover;
 	min-height: 300px;
 }
 
 .content-card:hover {
-	/*become color*/
+	/*pull up name*/
 }
 
 .content-card .row:second-child {
 	padding-top: 0px;
 }
 
-.content-card .row div {
+.landing .content-card {
+	height: 400px;
+	width: 48%;
+	margin: 5px 5px;
+	border-radius: 8px;
+}
+
+.landing2 {
+	padding-bottom: 10%;
+}
+
+.landing2 .content-card {
+	width: 32%;
+	margin: 6px 6px;
+	border-radius: 8px;
+	height: 200px;
+}
+
+.landing2 .content-card:hover {
+
+}
+
+.content-card img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.card-words > div {
 	min-height: 70px;
+	position: relative;
+}
+
+.card-words > div h3 {
+	bottom: 0;
+	position: absolute;
+}
+
+.card-words {
+	padding-top: 40%;
 }
 
 .response-card {
 	background-color: #fff;
 	border: 2px solid #eee;
 	padding: 40px;
+	min-height: 300px;
+	position: relative;
+}
+
+.response-card .row {
+	bottom: 40px;
+	position: absolute;
 }
 
 .user {
@@ -110,10 +176,25 @@ a, a:visited, a:hover, a:active {
 	text-transform: uppercase;
 	font-weight: 600;
 	color: #474D53;
+	letter-spacing: 0.25pt;
 }
 
 .button-wrapper {
-	padding-top: 55px;
+	padding-top: 15px;
+}
+
+.emoji img {
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+}
+
+.emoji h6 {
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 8pt;
+	letter-spacing: 0.75pt
 }
 
 .cta-form {
@@ -126,13 +207,14 @@ button.standard-cta-button {
 	padding: 12px 20px;
 	text-transform: uppercase;
 	letter-spacing: 1pt;
-	border-radius: 3px;
+	border-radius: 25px;
 	margin-top: 30px;
+	font-size: 9pt;
+	/*float: right;*/
 }
 
 a.standard-cta-button:hover,
 button.standard-cta-button {
-	border: none;
 }
 
 .blue, 
@@ -157,11 +239,11 @@ button.standard-cta-button {
 .footer {
 	position: static;
 	height: auto;
-	padding-bottom: 4rem;
+	padding: 10rem 0 4rem;
 }
 
 .footer .row {
-	margin-left: 0;
+	/*margin-left: 0;*/
 }
 
 .logo {
@@ -193,17 +275,25 @@ h1 span {
 
 /*This is for title — Catch phrase, title of content*/
 h2 {
-	font-weight: 500;
-	font-size: 30pt;
+	/*font-family: 'Optimist Light', Arial, Helvetica;*/
+	font-weight: 100;
+	font-size: 33pt;
 	color: #fff;
 }
 
 
 /*This is for description of content – content description */
 h3 {
-	font-weight: 500;
+	/*font-family: 'Optimist Bold', Helvetica, sans-serif;*/
+	font-weight: 600;
 	font-size: 20pt;
 	margin-top: 0px;
+	line-height: 1.25
+}
+
+
+h3 span {
+	color: #333;
 }
 
 
@@ -218,8 +308,8 @@ h4 {
 h5 {
 	font-weight: 500;
 	font-size: 12pt;
+	line-height:1.5;
 }
-
 
 /*This is for Names/profile*/
 h6 {
@@ -231,20 +321,32 @@ h6 {
 /*This is for general paragaraph - Article paragraph, sample answers to prompts, call to action description, about page...
 */
 p {
-	font-weight: 300;
-	font-size: 12pt;
+	font-weight: 100;
+	font-size: 13pt;
     margin: 0 0 10px;
+    color: #666;
 }
 
+.bg-image h5 {
+	font-weight: 100;
+}
 
 .content-card h3 {
 	color: #fff;
+	font-weight: 900;
+}
+
+.content-card h5 {
+	color: #fff;
+	font-weight: 100;
+	font-size: 10pt;
 }
 
 .content-card p {
 	color: #fff;
+	font-weight: 100;
+	font-size: 12pt;
 }
-
 
 .prototype .response-card h4 {
 	/*padding-left: 30pt;*/
@@ -257,13 +359,12 @@ p {
 
 .prototype .response-card {
 	background-color: #eee;
-	min-height: 170px;
 }
+
 
 #videoElement {
 	width: 800px; height:800px; 
 }
-
 
 
 @media (min-width: 1200px) {
