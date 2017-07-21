@@ -306,7 +306,7 @@ h4 {
 
 /*This is for Questions/prompts*/
 h5 {
-	font-weight: 500;
+	font-weight: 100;
 	font-size: 12pt;
 	line-height:1.5;
 }
@@ -321,10 +321,10 @@ h6 {
 /*This is for general paragaraph - Article paragraph, sample answers to prompts, call to action description, about page...
 */
 p {
-	font-weight: 100;
+	font-weight: 500;
 	font-size: 13pt;
-    margin: 0 0 10px;
-    color: #666;
+    	margin: 0 0 10px;
+    	color: #666;
 }
 
 .bg-image h5 {
