@@ -247,15 +247,17 @@ p {
 
 
 .prototype .response-card h4 {
-	padding-left: 30pt;
+	/*padding-left: 30pt;*/
 	font-size: 20pt;
 	color: #333;
 	display: inline-block;
 	vertical-align: middle;
+	text-align: center;
 }
 
 .prototype .response-card {
 	background-color: #eee;
+	min-height: 120px;
 }
 
 #videoElement {
